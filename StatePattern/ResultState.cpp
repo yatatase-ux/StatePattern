@@ -1,7 +1,9 @@
 #include "ResultState.h"
 #include <iostream>
+
 #include <conio.h>
 #include "KeyCord.h"
+
 #include <memory>
 #include "GameManager.h"
 #include "MainMenuState.h"
@@ -30,9 +32,4 @@ void ResultState::OnExit(GameManager* manager)
 {
 	std::cout << "ƒŠƒUƒ‹ƒg‰æ–Ê‚ðI—¹" << std::endl;
 	std::cout << std::endl;
-}
-
-const std::string ResultState::GetName() const
-{
-	return "ResultState";
 }

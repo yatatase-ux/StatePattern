@@ -1,7 +1,9 @@
 #include "InGameState.h"
 #include <iostream>
+
 #include <conio.h>
 #include "KeyCord.h"
+
 #include <memory>
 #include "GameManager.h"
 #include "ResultState.h"
@@ -47,9 +49,4 @@ void InGameState::OnUpdate(GameManager* manager, float deltaTime)
 void InGameState::OnExit(GameManager* manager)
 {
 	std::cout << std::endl;
-}
-
-const std::string InGameState::GetName() const
-{
-	return "InGameState";
 }

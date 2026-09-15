@@ -1,10 +1,11 @@
 #include "MainMenuState.h"
 #include <iostream>
+
 #include <conio.h>
 #include "KeyCord.h"
+
 #include <memory>
 #include "GameManager.h"
-
 #include "TitleState.h"
 #include "InGameState.h"
 
@@ -35,9 +36,4 @@ void MainMenuState::OnExit(GameManager* manager)
 {
 	std::cout << "メインメニュー画面を終了" << std::endl;
 	std::cout << std::endl;
-}
-
-const std::string MainMenuState::GetName() const
-{
-	return "MainMenuState";
 }

@@ -10,7 +10,7 @@ class GameManager
 	float gameTime;
 
 public:
-	GameManager();
+	GameManager(std::unique_ptr<GameState> initialState);
 	void ChangeState(std::unique_ptr<GameState> newState);
 	void Update(float deltaTime);
 };

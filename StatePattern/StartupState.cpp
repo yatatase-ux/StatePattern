@@ -1,9 +1,11 @@
 #include "StartupState.h"
 #include <iostream>
+
 #include <conio.h>
+#include "KeyCord.h"
+
 #include "GameManager.h"
 #include "TitleState.h"
-#include "KeyCord.h"
 
 void StartupState::OnEnter(GameManager* manager)
 {
@@ -19,9 +21,4 @@ void StartupState::OnExit(GameManager* manager)
 {
 	std::cout << "スタートアップ処理が完了" << std::endl;
 	std::cout << std::endl;
-}
-
-const std::string StartupState::GetName() const
-{
-	return "StartupState";
 }

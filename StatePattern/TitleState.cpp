@@ -1,10 +1,12 @@
 #include "TitleState.h"
 #include <iostream>
+
 #include <conio.h>
+#include "KeyCord.h"
+
 #include <memory>
 #include "MainMenuState.h"
 #include "GameManager.h"
-#include "KeyCord.h"
 
 void TitleState::OnEnter(GameManager* manager)
 {
@@ -24,9 +26,4 @@ void TitleState::OnExit(GameManager* manager)
 {
 	std::cout << "タイトル画面を終了" << std::endl;
 	std::cout << std::endl;
-}
-
-const std::string TitleState::GetName() const
-{
-	return "TitleState";
 }

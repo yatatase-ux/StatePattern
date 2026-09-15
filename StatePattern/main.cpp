@@ -3,17 +3,12 @@
 #include "StartupState.h"
 #include <memory>
 
-GameManager manager;
+GameManager manager(std::make_unique<StartupState>());
 
 int main()
 {
-    manager.ChangeState(std::make_unique<StartupState>());
-    float time = 0;
-
     while (1)
     {
-        time++;
-        manager.Update(time);
+        manager.Update(1.0f);
     }
 }
-

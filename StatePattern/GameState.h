@@ -16,7 +16,7 @@ public:
 };
 
 #define STATE_CLASS(className)\
-	void OnEnter(GameManager* manager)override;\
-	void OnUpdate(GameManager* manager, float deltaTime)override;\
-	void OnExit(GameManager* manager)override;\
-	const std::string GetName()const override;
+	void OnEnter(GameManager* manager);\
+	void OnUpdate(GameManager* manager, float deltaTime);\
+	void OnExit(GameManager* manager);\
+	const std::string GetName()const { return #className; };
